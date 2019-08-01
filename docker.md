@@ -122,7 +122,25 @@
 - 数据卷
     - docker volume create -d local test 会在宿主机/var/lib/docker/volumes下创建一个test数据卷
     - 绑定数据卷
+        docker run -it -p 80 --name=blog -v /home/ajin_w/blogbak:/home/ajin_w/blog ubuntu /bin/bash     此命令为开启一个名为blog的容器，-v参数为映射本地文件夹blogbak目录到容器blog下，映射目录相当于一个网络驱动器，容器内外的修改均会生效，可在映射结束的位置添加读写权限，例如ro
         
+- 数据容器
+    - 数据容器的创建使得挂载该数据容器的容器间可以很方便的进行数据交换
+    - 创建数据容器
+        - docker run -it -v /dbdata --name dbdata ubuntu
+    - 挂载数据容器
+        - docker run -it --volumes-from dbdata --name db1 ubuntu
+    - 数据容器不需要保持在运行状态
+    - 删除数据卷必须在最后一个挂载他的容器显式使用docker rm -v命令来指定同时删除关联的容器
+    - 数据迁移
+        - docker run --volumes-from dbdata -v $(pwd):/backup --name worker ubuntu tar -cvf /backup/backup.tar /dbdata
+        - 以上命令解释：创建一个worker容器，挂载dbdata数据卷，使用-v参数挂载本地当前目录到worker的容器的backup目录，容器启动后，打包dbdata为容器的/backup/backup.tar，即宿主机的当前目录下的backup.tar      意思就是挂载两个数据卷，一个本地目录，一个数据卷或者数据容器，将容器内的数据卷打包到容器的backup目录，因为直接挂载数据卷在/目录下，在挂载一个目录，将/目录下的数据卷打包进backup就好，本地目录变成了backup
+
+    - 数据恢复
+        - docker run -v /dbdata --name dbdata2 ubuntu /bin/bash 
+        - 创建一个容器挂载dbdata数据卷，名为dbdata2
+        - docker run --volumes-from dbdata2 -v $(pwd):/backup ubuntu tar xvf /backup/backup.tar 
+        - 创建另一份容器挂载dbdata2和当前目录到/backup目录，将本地的目录解压
 
 
 
