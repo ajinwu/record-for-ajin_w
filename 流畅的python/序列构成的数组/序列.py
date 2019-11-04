@@ -9,5 +9,7 @@ weird_board[1][2] = "U"
 print(weird_board)
 
 t = (1, 2, [30, 40])
-t[2] += [50, 60]
+# t[2] += [50, 60]
 print(t)
+
+[1,2,3].sort(reverse = True)
