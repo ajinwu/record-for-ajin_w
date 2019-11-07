@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88b07508-181c-4666-b2d7-a0b86da01ac8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/R_User_Library.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/算法4.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sqrt_nuton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="351">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#69#70#0" expanded="true" />
@@ -65,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BinarySearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="222">
+              <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,14 +97,15 @@
         <option value="$PROJECT_DIR$/src/stdRandom.java" />
         <option value="$PROJECT_DIR$/src/1.txt" />
         <option value="$PROJECT_DIR$/src/BinarySearch.java" />
+        <option value="$PROJECT_DIR$/src/Stats.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2471" />
-    <option name="y" value="1" />
-    <option name="width" value="1270" />
-    <option name="height" value="713" />
+    <option name="x" value="240" />
+    <option name="y" value="135" />
+    <option name="width" value="1440" />
+    <option name="height" value="810" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -120,8 +115,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,13 +131,17 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -208,17 +205,19 @@
       <updated>1572765798599</updated>
       <workItem from="1572765802231" duration="4579000" />
       <workItem from="1572772518879" duration="4228000" />
+      <workItem from="1572875840870" duration="1260000" />
+      <workItem from="1572912397119" duration="16000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8807000" />
+    <option name="totallyTimeSpent" value="10083000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1919" y="-1" width="1922" height="1082" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25320512" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2596154" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -253,6 +252,19 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/stdRandom.java" />
+    <entry file="jar:///opt/java/jdk1.8.0_211/src.zip!/java/util/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="2067" column="17" lean-forward="true" selection-start-line="2067" selection-start-column="17" selection-end-line="2067" selection-end-column="17" />
+          <folding>
+            <element signature="e#78006#78007#0" expanded="true" />
+            <element signature="e#78050#78051#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stats.java" />
     <entry file="file://$PROJECT_DIR$/src/isPrime.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -264,31 +276,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stdRandom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sqrt_nuton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="351">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#69#70#0" expanded="true" />
             <element signature="e#112#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/java/jdk1.8.0_211/src.zip!/java/util/Scanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="2067" column="17" lean-forward="true" selection-start-line="2067" selection-start-column="17" selection-end-line="2067" selection-end-column="17" />
-          <folding>
-            <element signature="e#78006#78007#0" expanded="true" />
-            <element signature="e#78050#78051#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -302,8 +296,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="222">
+          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
