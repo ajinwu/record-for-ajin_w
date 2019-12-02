@@ -20,3 +20,4 @@ import array
 num = array.array('h', [-2, -1, 0, 1, 2])  # 有符号整数
 print(num)
 print(bytes(num))
+
