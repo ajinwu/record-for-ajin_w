@@ -1,0 +1,43 @@
+import redis
+conn = redis.Redis(host = '127.0.0.1', port = 6379, db = 0)
+# print(conn.get('key'))
+
+# # 阻塞操作, 在等待的时间内如果出现了才会继续操作, 没有数据会直接返回None
+# print(conn.brpoplpush('list', 'list2', 1))
+# print(conn.lrange('list', 0, -1))
+# print(conn.lrange('list2', 0, -1))
+
+# print(conn.sadd("set-key", "a", "b", "c"))
+# print(conn.smembers("set-key"))
+# print(conn.scard("set-key"))
+# print(conn.sismember("set-key", "a"))
+# print(conn.srandmember("set-key", 1)) # 整数不重复， 负数会重复
+# print(conn.srem("set-key", "a"))
+# print(conn.smove("set-key", "set-key2", "1"))
+# print(conn.smove("set-key", "set-key2", "c"))
+# print(conn.smembers("set-key"))
+# print(conn.smembers("set-key"))
+# print(conn.smembers("set-key2"))
+# print(conn.sdiff("set-key", "set-key2"))
+# print(conn.sinter("set-key", "set-key2"))
+# print(conn.sunion("set-key", "set-key2"))
+# print(conn.sdiffstore("set-key2", "set-key"))
+# print(conn.smembers("set-key"))
+# print(conn.smembers("set-key2"))
+
+# print(conn.hset("hash-key","k", "v"))
+# print(conn.hget("hash-key", "k"))
+# print(conn.hgetall("hash-key"))
+# print(conn.hmset("hash-key", {"k1":"v1", "k2":"v2"}))
+# print(conn.hmget("hash-key", {"k", "k1"}))
+# print(conn.hlen("hash-key"))
+# print(conn.hdel("hash-key", "k"))
+# print(conn.hgetall("hash-key"))
+# print(conn.hexists("hash-key", "k0"))
+# print(conn.hkeys("hash-key"))
+# print(conn.hvals("hash-key"))
+print(conn.hincrby("counter", "test", 200))
+print(conn.hincrby("counter", "test", -50))
+print(conn.hget("counter", "test"))
+# print(conn.hdel("hash-key"))
+
